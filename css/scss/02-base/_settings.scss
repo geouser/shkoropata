@@ -5,11 +5,57 @@ html,
 body {
 	height: 100%;
     background-image: url("../images/bg-body.jpg");
+    font: 300 21px $dp;
+    color: #FFF;
+    background-attachment: fixed;
 }
 body {
     font-family: $dp;
+    padding-top: 60px;
 }
 
+h1 {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    -webkit-text-shadow: 4px 4px 10px rgba(0,0,0,.4);
+        text-shadow: 4px 4px 10px rgba(0,0,0,.4);
+    &:after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: $accent;
+        margin: 20px auto 0;
+    }
+}
+article {
+    text-align: left;
+    padding: 0 10%;
+    margin: 0 auto;
+    img {
+        width: 140%;
+        display: block;
+        margin: 60px auto 60px;
+        position: relative;
+        left: 50%;
+        -webkit-box-shadow: 0 0 6px rgba(0,0,0,.4);
+            box-shadow: 0 0 6px rgba(0,0,0,.4);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    p {
+        -webkit-text-shadow: 1px 1px 4px rgba(0,0,0,.2);
+        text-shadow: 1px 1px 4px rgba(0,0,0,.2);
+        margin-bottom: 20px;
+    }
+}
+
+article p {
+    margin-bottom: 20px;
+}
 
 // lAYOUT
 // ---------------------------
@@ -17,4 +63,8 @@ body {
 	width: 1200px;
 	margin: 0 auto;
 	text-align: center;
+}
+
+
+.parallax {
 }

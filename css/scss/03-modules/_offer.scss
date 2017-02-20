@@ -1,2 +1,15 @@
 .offer {
+    height: 300px;
+    &:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+    h1 {
+        max-width: 60%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+    }
 }
