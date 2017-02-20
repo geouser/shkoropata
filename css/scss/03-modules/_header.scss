@@ -3,7 +3,7 @@
     @include position(absolute, 0, 0, auto, 0);
     @include transition(all, .4s);
     z-index: 100;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.4);
     .wrapper {
         @include flex();
         width: 90%;
@@ -29,7 +29,7 @@
                 font-size: 18px;
             }
             .sub-menu {
-                background-color: rgba(0,0,0,.7);
+                background-color: rgba(0,0,0,.5);
                 width: 100%;
                 position: absolute;
                 padding: 0;
