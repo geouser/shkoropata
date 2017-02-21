@@ -76,8 +76,8 @@ blockquote {
     position: relative;
     margin: 40px auto;
     padding-left: 40px;
-    border-left: 2px solid #a7a6a6;
-    color: #444;
+    border-left: 2px solid #fff;
+    color: #fff;
     font-style: italic;
     width: 100%;
     width: -webkit-calc(100% - 40px);
@@ -93,9 +93,6 @@ article {
         width: 100%;
         display: block;
         margin: 60px auto 60px;
-        position: relative;
-        border: 2px solid #fff;
-            box-shadow: 0 25px 25px rgba(0,0,0,0.4);
     }
     img {
         max-width: 100%;
@@ -151,6 +148,10 @@ article {
             background-color: $text;
             margin-left: 0;
         }
+    }
+    blockquote  {
+        border-left: 2px solid #a7a6a6;
+    color: #444;
     }
 }
 article p {
