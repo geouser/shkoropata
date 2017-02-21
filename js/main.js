@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
             $element2.toggleClass(className, $document.scrollTop() >= 1);
         });
     });
-    
+
     /*---------------------------
                                 PAGE ANCHORS
     ---------------------------*/

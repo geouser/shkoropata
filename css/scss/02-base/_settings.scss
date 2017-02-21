@@ -4,12 +4,86 @@
 html,
 body {
 	height: 100%;
-    background-image: url("../images/bg-body.jpg");
+    background: #fafafa;
+    font: 400 18px $os;
+    color: #fff;
+    background-image: url("../images/bg.jpg");
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    @media (max-width: 1700px) {
+        font-size: 17px;
+    }
+    @media (max-width: 1500px) {
+        font-size: 16px;
+    }
 }
 body {
-    font-family: $dp;
+    font-family: $os;
+    padding-top: 60px;
 }
 
+h1 {
+    font-size: 72px;
+    margin-bottom: 40px;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-style: normal;
+    &:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: #fff;
+        margin: 20px auto 0;
+    }
+    @media (max-width: 1700px) {
+        font-size: 64px;
+    }
+    @media (max-width: 1500px) {
+        font-size: 58px;
+    }
+}
+article {
+    text-align: left;
+    padding: 0 10%;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        display: block;
+        margin: 60px auto 60px;
+        position: relative;
+        border: 2px solid #fff;
+            box-shadow: 0 25px 25px rgba(0,0,0,0.4);
+    }
+    p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+    span {
+        line-height: 1.6;
+    }
+}
+.article {
+    margin: 80px auto 40px;
+    padding: 10%;
+    background-color: #FFF;
+    color: $text;
+    img {
+        border: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+    h1 {
+        &:after {
+            background-color: $text;
+            margin-left: 0;
+        }
+    }
+}
+article p {
+    margin-bottom: 20px;
+}
 
 // lAYOUT
 // ---------------------------
@@ -17,4 +91,11 @@ body {
 	width: 1200px;
 	margin: 0 auto;
 	text-align: center;
+    @media (max-width: 1500px) {
+        width: 1000px;
+    }
+}
+
+
+.parallax {
 }
