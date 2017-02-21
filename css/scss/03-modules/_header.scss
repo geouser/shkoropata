@@ -27,6 +27,14 @@
                 margin: 0 0px 0 40px;
                 line-height: 60px;
                 font-size: 18px;
+                @media (max-width: 1700px) {
+                    margin-left: 30px;
+                    font-size: 17px;
+                }
+                @media (max-width: 1500px) {
+                    margin-left: 25px;
+                    font-size: 16px;
+                }
             }
             .sub-menu {
                 background-color: rgba(0,0,0,1);
@@ -42,6 +50,12 @@
                     -ms-transition: all .4s;
                      -o-transition: all .4s;
                         transition: all .4s;
+                @media (max-width: 1700px) {
+                    left: 15px;
+                }
+                @media (max-width: 1500px) {
+                    left: 12.5px;
+                }
                 li {
                     display: block;
                     border-bottom: 1px solid rgba(255,255,255,.1);
@@ -55,6 +69,12 @@
                             background-color: rgba(255,255,255,.2);
                             @include transition(all, .2s);
                             
+                        }
+                        @media (max-width: 1700px) {
+                            font-size: 16px;
+                        }
+                        @media (max-width: 1500px) {
+                            font-size: 14px;
                         }
                     }
                     &:last-of-type {
