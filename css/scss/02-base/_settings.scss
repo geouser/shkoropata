@@ -48,15 +48,10 @@ article {
     padding: 0 10%;
     margin: 0 auto;
     img {
-        width: 140%;
+        width: 100%;
         display: block;
         margin: 60px auto 60px;
         position: relative;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        transform: translateX(-50%);
         border: 2px solid #fff;
             box-shadow: 0 25px 25px rgba(0,0,0,0.4);
     }
@@ -68,7 +63,23 @@ article {
         line-height: 1.6;
     }
 }
-
+.article {
+    margin: 80px auto 40px;
+    padding: 10%;
+    background-color: #FFF;
+    color: $text;
+    img {
+        border: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+    h1 {
+        &:after {
+            background-color: $text;
+            margin-left: 0;
+        }
+    }
+}
 article p {
     margin-bottom: 20px;
 }
