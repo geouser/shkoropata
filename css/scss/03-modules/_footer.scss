@@ -1,5 +1,64 @@
 footer {
-    height: 60px;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,.8);
     margin-top: 100px;
+    position: relative;
+    z-index: 20;
+    .wrapper {
+        @include flex();
+    }
+    .copy {
+        font-size: 14px;
+        color: rgba(255,255,255,.6);
+        font-style: italic;
+    }
+    padding: 15px 0 12px;
+}
+
+.social {
+    list-style-type: none;
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        a {
+           color: rgba(255,255,255,.6);
+           opacity: .6;
+           display: inline-block;
+           width: 24px;
+           height: 24px;
+           background-repeat: no-repeat;
+           background-position: 50% 50%;
+           @include transition(all, .2s);
+           -webkit-background-size: 100% auto;
+                -o-background-size: 100% auto;
+                   background-size: 100% auto;
+            &:hover {
+                color: #FFF;
+                opacity: 1;
+            }
+            &.vk {
+                background-image: url("../images/vk.png");
+            }
+            &.inst {
+                background-image: url("../images/inst.png");
+                width: 18px;
+            }
+            &.flickr {
+                background-image: url("../images/flickr.png");
+                width: 18px;
+            }
+        }
+    }
+}
+
+.front-page {
+    footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        .wrapper {
+            width: 90%;
+        }
+    }
 }

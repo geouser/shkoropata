@@ -3,7 +3,7 @@
     @include position(absolute, 0, 0, auto, 0);
     @include transition(all, .4s);
     z-index: 100;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,.8);
     .wrapper {
         @include flex();
         width: 90%;

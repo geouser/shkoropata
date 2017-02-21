@@ -11,9 +11,10 @@
     margin-right: 5%;
     margin-bottom: 5%;
     box-shadow: 0 25px 25px rgba(0,0,0,0.4);
-    outline: 1px solid #bdbdbd;
+    outline: 1px solid rgba(189, 189, 189, 0.42);
     outline-offset: -10px;
     color: $text;
+    @include transition(all, .2s);
     &:nth-of-type(3n + 3) {
         margin-right: 0;
     }
@@ -35,7 +36,7 @@
     hr {
         opacity: .8;
         border: none;
-        border-bottom: 1px solid #bdbdbd;
+        border-bottom: 1px solid rgba(189, 189, 189, 0.42);
         background: none;
         height: 0;
     }
@@ -44,10 +45,14 @@
         padding: 0 10px;
         time,
         &__comments {
-            font-weight: 700;
+            font-style: italic;
+            color: #444;
         }
         &__comments {
-            font-weight: 400;
+        }
+        &__title {
+            font-family: 'Lobster', cursive;
+            font-size: 20px;
         }
         p {
             font-weight: 400;
@@ -55,6 +60,14 @@
         .button {
             margin-top: 20px;
         }
+    }
+    &:hover {
+        outline: 1px solid rgba(189, 189, 189, 0.42);
+        -webkit-transform: translateY(-10px);
+           -moz-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+             -o-transform: translateY(-10px);
+                transform: translateY(-10px);
     }
 }
 
@@ -238,7 +251,7 @@
     color: #FFF;
     text-transform: uppercase;
     position: fixed;
-    right: 10px;top: 0;
+    right: 0px;top: 0;
     bottom: 0;
     margin: auto;
     height: 150px;
