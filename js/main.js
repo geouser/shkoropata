@@ -25,6 +25,8 @@ function exist(el){
 
 jQuery(document).ready(function($) {
 
+    $("#my-gallery").unitegallery(); 
+
     /*---------------------------
                                   ADD CLASS ON SCROLL
     ---------------------------*/
