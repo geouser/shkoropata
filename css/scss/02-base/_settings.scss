@@ -4,22 +4,23 @@
 html,
 body {
 	height: 100%;
-    background-image: url("../images/noisy_net.png");
+    background: #fff;
     font: 300 21px $dp;
-    color: #FFF;
+    color: #454545;
     background-attachment: fixed;
 }
 body {
     font-family: $dp;
     padding-top: 60px;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    color: #151515;
+    letter-spacing: 1px;
+}
 h1 {
     font-size: 72px;
     font-weight: 700;
     margin-bottom: 40px;
-    -webkit-text-shadow: 4px 4px 10px rgba(0,0,0,.4);
-        text-shadow: 4px 4px 10px rgba(0,0,0,.4);
     &:after {
         content: "";
         display: block;
@@ -39,16 +40,12 @@ article {
         margin: 60px auto 60px;
         position: relative;
         left: 50%;
-        -webkit-box-shadow: 0 0 6px rgba(0,0,0,.4);
-            box-shadow: 0 0 6px rgba(0,0,0,.4);
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
         transform: translateX(-50%);
     }
     p {
-        -webkit-text-shadow: 1px 1px 4px rgba(0,0,0,.2);
-        text-shadow: 1px 1px 4px rgba(0,0,0,.2);
         margin-bottom: 20px;
         line-height: 1.6;
     }

@@ -3,7 +3,7 @@
     @include position(absolute, 0, 0, auto, 0);
     @include transition(all, .4s);
     z-index: 100;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,1);
     .wrapper {
         @include flex();
         width: 90%;
@@ -29,7 +29,7 @@
                 font-size: 18px;
             }
             .sub-menu {
-                background-color: rgba(0,0,0,.5);
+                background-color: rgba(0,0,0,1);
                 width: 100%;
                 position: absolute;
                 padding: 0;
@@ -52,7 +52,7 @@
                         font-size: 17px;
                         padding: 10px;
                         &:hover {
-                            background-color: rgba(0,0,0,1);
+                            background-color: rgba(255,255,255,.2);
                             @include transition(all, .2s);
                             
                         }
