@@ -176,3 +176,23 @@
         }
     }
 }
+
+
+.comments {
+    padding: 5% 10%;
+    background-color: #FFF;
+    color: $text;
+    text-align: left;
+    h3 {
+        margin-bottom: 40px;
+    }
+}
+
+.comment {
+    margin-bottom: 40px;
+    &__author {
+        font-weight: 700;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
