@@ -20,13 +20,7 @@
             display: inline-block;
             vertical-align: middle;
             position: relative;
-            padding-left: 40px;
-            @media (max-width: 1700px) {
-                padding-left: 30px;
-            }
-            @media (max-width: 1500px) {
-                padding-left: 25px;
-            }
+            margin-right: -5px;
             > a {
                 color: #fff;
                 display: inline-block;
@@ -35,26 +29,12 @@
                 line-height: 60px;
                 font-size: 18px;
                 position: relative;
-                &:after {
-                    content: "";
-                    display: block;
-                    height: 1px;
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    margin: auto;
-                    max-width: 0;
-                    bottom: 10px;
-                    background-color: #FFF;
-                    -webkit-transition: all .2s;
-                       -moz-transition: all .2s;
-                        -ms-transition: all .2s;
-                         -o-transition: all .2s;
-                            transition: all .2s;
-                }
-                &:hover:after,
-                &.active:after {
-                    max-width: 100%;
+                font-weight: 300;
+                padding: 0 20px;
+                @include transition(all, .2s);
+                &:hover,
+                &.active {
+                   background-color: $accent;
                 }
                 @media (max-width: 1700px) {
                     font-size: 17px;
@@ -63,16 +43,16 @@
                     font-size: 16px;
                 }
             }
-            &:hover>a:after,
-            &.active>a:after {
-                max-width: 100%;
+            &:hover>a,
+            &.active>a {
+                background-color: $accent;
             }
             .sub-menu {
                 background-color: rgba(0,0,0,1);
                 width: 100%;
                 position: absolute;
                 padding: 0;
-                left: 20px;
+                left: 0px;
                 max-height: 0;
                 opacity: 0;
                 visibility: hidden;
@@ -81,12 +61,6 @@
                     -ms-transition: all .4s;
                      -o-transition: all .4s;
                         transition: all .4s;
-                @media (max-width: 1700px) {
-                    left: 15px;
-                }
-                @media (max-width: 1500px) {
-                    left: 12.5px;
-                }
                 li {
                     display: block;
                     border-bottom: 1px solid rgba(255,255,255,.1);
@@ -96,8 +70,9 @@
                         color: #FFF;
                         font-size: 17px;
                         padding: 10px;
+                        font-weight: 300;
                         &:hover {
-                            background-color: rgba(255,255,255,.2);
+                            background-color: $accent;
                             @include transition(all, .2s);
                             
                         }
