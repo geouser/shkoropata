@@ -223,6 +223,7 @@ jQuery(document).ready(function($) {
 
     $('.masonry-grid').on( 'layoutComplete', function(){
         $(this).addClass('active');
+        $(this).masonry();
     } );
     /*Masonry*/
     $('.masonry-grid').masonry({
