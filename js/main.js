@@ -221,16 +221,21 @@ jQuery(document).ready(function($) {
     }
 
 
-    $('.masonry-grid').on( 'layoutComplete', function(){
+    
+    /*Masonry*/
+    var $gallery_container = $('.masonry-grid');
+    $gallery_container.on( 'layoutComplete', function(){
         $(this).addClass('active');
     } );
-    /*Masonry*/
-    $('.masonry-grid').masonry({
-      // set itemSelector so .grid-sizer is not used in layout
-      itemSelector: '.grid-item',
-      // use element for option
-      percentPosition: true
+    $gallery_container.imagesLoaded( function() {
+        $gallery_container.masonry({
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            // use element for option
+            percentPosition: true
+        }).masonry('layout');
     });
+
 
 
     
