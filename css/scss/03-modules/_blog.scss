@@ -233,3 +233,22 @@
         resize: none;
     }
 }
+
+.share {
+    color: #FFF;
+    text-transform: uppercase;
+    position: fixed;
+    right: 10px;top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 150px;
+    font-size: 12px;
+    img {
+        display: block;
+        width: 40px;
+    }
+    span {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
