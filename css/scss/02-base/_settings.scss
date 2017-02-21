@@ -169,9 +169,10 @@ article p {
 }
 
 
-.parallax {
+.dark-bg,
+.portfolio {
+    background: #000;
 }
-
 .flex-grid {
     @include flex($alignI: stretch, $justify: flex-start);
     margin: 0 -10px -20px;
