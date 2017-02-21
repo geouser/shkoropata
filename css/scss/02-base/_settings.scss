@@ -5,27 +5,30 @@ html,
 body {
 	height: 100%;
     background: #fafafa;
-    font: 400 21px $dp;
+    font: 400 18px $os;
     color: #fff;
     background-image: url("../images/bg.jpg");
     background-position: 50% 50%;
     background-attachment: fixed;
     @media (max-width: 1700px) {
-        font-size: 20px;
+        font-size: 17px;
     }
     @media (max-width: 1500px) {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 body {
-    font-family: $dp;
+    font-family: $os;
     padding-top: 60px;
 }
 
 h1 {
     font-size: 72px;
-    font-weight: 700;
     margin-bottom: 40px;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-style: normal;
     &:after {
         content: "";
         display: block;
