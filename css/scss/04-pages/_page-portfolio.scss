@@ -16,12 +16,28 @@
     width: 25%;
     padding: 0;
     margin: 0;
+
+    @media (max-width: 991px) {
+        width: 33.33%;
+    }
+
+    @media (max-width: 700px) {
+        width: 50%;
+    }
 }
 .my-gallery .grid-item {
     padding: 0;
     margin: 0;
     width: 25%;
     border: 6px solid transparent;
+
+    @media (max-width: 991px) {
+        width: 33.33%;
+    }
+
+    @media (max-width: 700px) {
+        width: 50%;
+    }
 
     a {
         display: block;
