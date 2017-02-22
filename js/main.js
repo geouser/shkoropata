@@ -210,7 +210,6 @@ jQuery(document).ready(function($) {
     $gallery_container.imagesLoaded( function() {
         $gallery_container.masonry({
             itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer',
             // use element for option
             percentPosition: true
         }).masonry('layout');
