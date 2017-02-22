@@ -213,17 +213,27 @@ jQuery(document).ready(function($) {
 
     
     /*Masonry*/
-    var $gallery_container = $('.masonry-grid');
-    $gallery_container.on( 'layoutComplete', function(){
-        $(this).addClass('active');
-    } );
-    $gallery_container.imagesLoaded( function() {
-        $gallery_container.masonry({
-            itemSelector: '.grid-item',
-            // use element for option
-            percentPosition: true
-        }).masonry('layout');
-    });
+    if ( exist('.masonry-grid') ) {
+        var $gallery_container = $('.masonry-grid');
+        $gallery_container.on( 'layoutComplete', function(){
+            $(this).addClass('active');
+        } );
+        $gallery_container.imagesLoaded( function() {
+            $gallery_container.masonry({
+                itemSelector: '.grid-item',
+                // use element for option
+                percentPosition: true
+            }).masonry('layout');
+        });
+    }
+    
+
+
+
+    /*Gallery*/
+    if ( exist('.my-gallery') ) {
+        initPhotoSwipeFromDOM('.my-gallery');
+    }
 
 
 
@@ -434,6 +444,3 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
         openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
     }
 };
-
-// execute above function
-initPhotoSwipeFromDOM('.my-gallery');
