@@ -71,6 +71,9 @@ footer {
             &.fb {
                 width: 18px;
                 background-image: url("../images/facebook-logo.svg");
+                @media (max-width: 1500px) {
+                    width: 14px;
+                }
             }
             &.inst {
                 background-image: url("../images/inst.png");
