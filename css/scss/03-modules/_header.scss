@@ -14,7 +14,14 @@
 /* ------------------------------------ */
 /*  NAV STYLES  */
 .mainNav {
+    .button {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
     > ul {
+        display: inline-block;
+        vertical-align: middle;
         list-style-type: none;
         > li {
             display: inline-block;

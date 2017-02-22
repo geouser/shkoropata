@@ -1,0 +1,91 @@
+.popup {
+    opacity: 0;
+    visibility: hidden;
+    display: block !important;
+    position: fixed;
+    width: 500px;
+    max-width: 100%;
+    height: 440px;
+    z-index: 10;
+    background: rgba(0,0,0,.8);    
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 40px;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: all .4s;
+       -moz-transition: all .4s;
+        -ms-transition: all .4s;
+         -o-transition: all .4s;
+            transition: all .4s;
+    &.opened {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.popup-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    opacity: .6;
+    cursor: pointer;
+    font-family: $os;
+    font-weight: 700;
+    @include transition(all, .2s);
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.form {
+    background: transparent;
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 45px;
+        padding-left: 15px;
+        background-color: #FFF;
+        font-family: $os;
+    }
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 100px;
+        padding-left: 15px;
+        padding-top: 10px;
+        background-color: #FFF;
+        resize: none;
+        font-family: $os;
+    }
+}
+
+.overlay {
+    position: fixed;
+    z-index: 18px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .4s;
+       -moz-transition: all .4s;
+        -ms-transition: all .4s;
+         -o-transition: all .4s;
+            transition: all .4s;
+    &.opened {
+        opacity: 1;
+        visibility: visible;
+    }
+}

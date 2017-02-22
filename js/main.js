@@ -67,6 +67,16 @@ jQuery(document).ready(function($) {
     });
 
 
+    $('.popup-trigger').click(function(){
+        var target = $(this).attr('href');
+        $('' + target + '').addClass('opened');
+        $('.overlay').addClass('opened');
+    });
+
+    $('.popup-close').click(function(){
+        $(this).parent().removeClass('opened');
+        $('.overlay').removeClass('opened');
+    });
 
     /*---------------------------
                                   Magnific popup

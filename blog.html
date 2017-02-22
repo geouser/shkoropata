@@ -47,6 +47,7 @@
                         <li><a href="blog.html" class="active">Blog</a></li>
                         <li><a href="contacts.html">Contacts</a></li>
                     </ul>
+                    <button href="#modal-popup" class="button popup-trigger">Apply</button>
                 </nav><!-- end nav -->
 
             </div><!-- end wrapper -->
@@ -150,6 +151,7 @@
                 <span class="copy">© Volodymyr Shkoropata – photography</span>
                 <div class="social">
                     <li><a href="#" class="vk"></a></li>
+                    <li><a href="#" class="fb"></a></li>
                     <li><a href="#" class="inst"></a></li>
                     <li><a href="#" class="flickr"></a></li>
                 </div>
@@ -159,9 +161,20 @@
 
         <!-- //////////////////////////////////////////////////////////////////////// -->
 
-        <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup"></div>
+        <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup">
+            <form action="" class="form">
+                <input type="text" name="name" placeholder="Name">
+                 <input type="text" name="tel" placeholder="Phone">
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button class="button">Send</button>
+            </form>
+            <button class="popup-close">x</button>
+        </div>
 
-        <div id="modal-popup-ok" class="mfp-hide zoom-anim-dialog popup result">
+        <div class="overlay"></div>
+
+        <!--<div id="modal-popup-ok" class="mfp-hide zoom-anim-dialog popup result">
             <p class="heading">Ваша заявка принята =)</p>
             <p class="msg">Мы свяжемся с вами в ближайшее время!</p>
         </div>
@@ -169,7 +182,7 @@
         <div id="modal-popup-error" class="mfp-hide zoom-anim-dialog popup result">
             <p class="heading">Упс, что-то пошло не так =)</p>
             <p class="msg">Но вы всегда можете связаться с нами по телефону!</p>
-        </div>
+        </div>-->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js"></script>
