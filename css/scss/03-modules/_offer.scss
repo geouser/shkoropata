@@ -3,6 +3,10 @@
     @media (max-width: 1500px) {
         height: 220px;
     }
+    @media (max-width: 760px) {
+        height: auto;
+        padding: 60px 0;
+    }
     &:after {
         content: "";
         display: inline-block;
