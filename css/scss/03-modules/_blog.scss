@@ -87,6 +87,9 @@
             @media (max-width: 1500px) {
                 font-size: 12px;
             }
+            @media (max-width: 1040px) {
+                font-size: 10px;
+            }
         }
         &__comments {
         }
@@ -104,6 +107,11 @@
 
             @media (max-width: 1500px) {
                 height: 76px;
+            }
+
+            @media (max-width: 1040px) {
+                font-size: 13px;
+                height: 72px;
             }
 
 
