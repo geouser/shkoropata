@@ -164,6 +164,9 @@
 .logo {
     width: 160px;
     display: block;
+    &--mobile {
+        display: none;
+    }
     img {
         max-width: 100%;
         display: block;
@@ -174,6 +177,16 @@
     @media (max-width: 760px) {
         width: 200px;
         margin: 60px auto 0;
+        &--mobile {
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 180px;
+            z-index: 20;
+        }
     }
 }
 
