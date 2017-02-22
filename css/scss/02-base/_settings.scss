@@ -7,12 +7,6 @@ body {
     background: #fafafa;
     font: 400 18px $os;
     color: #fff;
-    background-image: url("../images/bg.jpg");
-    background-position: 50% 50%;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
     @media (max-width: 1700px) {
         font-size: 17px;
     }
@@ -35,8 +29,18 @@ body {
 body {
     font-family: $os;
     padding-top: 60px;
+    background-image: url("../images/bg.jpg");
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
     @media (max-width: 760px) {
-        padding-top: 0;
+        padding-top: 20px;
+    }
+    &.dark-bg {
+        background-image: none;
+        height: auto;
     }
 }
 
