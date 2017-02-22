@@ -177,7 +177,7 @@ jQuery(document).ready(function($) {
             center: mapCenterCoord,
             zoom: 17,
             //draggable: false,
-            disableDefaultUI: true,
+            disableDefaultUI: false,
             scrollwheel: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };

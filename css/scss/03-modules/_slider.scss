@@ -47,6 +47,9 @@
     -o-animation: titleAnimation 36s linear infinite 0s;
     -ms-animation: titleAnimation 36s linear infinite 0s;
     animation: titleAnimation 36s linear infinite 0s;
+    @media (max-width: 1500px) {
+        bottom: 80px;
+    }
 }
 .cb-slideshow li div h3 {
     font-family: 'Lobster', cursive;

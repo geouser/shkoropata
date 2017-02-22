@@ -219,3 +219,62 @@ article p {
         }
     }
 }
+
+
+.map {
+    height: 400px;
+    margin: 60px auto;
+}
+address {
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    font-size: 21px;
+    text-align: center;
+    margin: 20px auto 40px;
+}
+.tel {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #FFF;
+    text-align: center;
+    &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -2px;
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+        background-position: 50% 50%;
+        -webkit-background-size: auto 100%;
+             -o-background-size: auto 100%;
+                background-size: auto 100%;
+        background-image: url("../images/smartphone.svg");
+    }
+    &.cell:before {
+        background-image: url("../images/phone.svg");
+    }
+}
+.email {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #FFF;
+    text-align: center;
+    &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -2px;
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+        background-position: 50% 50%;
+        -webkit-background-size: auto 100%;
+             -o-background-size: auto 100%;
+                background-size: auto 100%;
+        background-image: url("../images/envelope.svg");
+    }
+}
