@@ -65,6 +65,17 @@
     @media (max-width: 1500px) {
         font-size: 104px;
     }
+    @media (max-width: 1200px) {
+        font-size: 80px;
+    }
+    @media (max-width: 800px) {
+        font-size: 62px;
+        letter-spacing: 3px;
+    }
+    @media (max-width: 600px) {
+        font-size: 48px;
+        letter-spacing: 2px;
+    }
 }
 .cb-slideshow li:nth-child(1) span {  }
 .cb-slideshow li:nth-child(2) span {
@@ -221,11 +232,4 @@
 /* Show at least something when animations not supported */
 .no-cssanimations .cb-slideshow li span{
     opacity: 1;
-}
-
-@media screen and (max-width: 1140px) { 
-    .cb-slideshow li div h3 { font-size: 140px }
-}
-@media screen and (max-width: 600px) { 
-    .cb-slideshow li div h3 { font-size: 80px }
 }

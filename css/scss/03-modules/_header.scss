@@ -198,7 +198,7 @@
     display: none;
     width: 40px;
     height: 39px;
-    @include position(fixed, 15px, 15px, auto, auto);
+    @include position(fixed, 15px, 12px, auto, auto);
     margin: auto; 
     cursor: pointer;
     z-index: 100;
