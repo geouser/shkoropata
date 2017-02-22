@@ -83,6 +83,7 @@
         padding-left: 15px;
         background-color: #FFF;
         font-family: $os;
+        border: none;
         @media (max-width: 760px) {
             height: 40px;
         }
@@ -96,8 +97,19 @@
         background-color: #FFF;
         resize: none;
         font-family: $os;
+        border: none;
         @media (max-width: 760px) {
 
+        }
+    }
+    .button {
+        height: 45px;
+        line-height: 45px;
+        padding: 0 20px;
+        width: 100%;
+        @media (max-width: 760px) {
+            height: 40px;
+            line-height: 40px;
         }
     }
 }
