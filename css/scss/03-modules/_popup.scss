@@ -28,6 +28,33 @@
         opacity: 1;
         visibility: visible;
     }
+    @media (max-width: 760px) {
+        &#modal-popup {
+            opacity: 1;
+            -webkit-transform: none;
+               -moz-transform: none;
+                -ms-transform: none;
+                 -o-transform: none;
+                    transform: none;
+            visibility: visible;
+            position: static;
+            margin-top: 40px;
+        }
+    }
+    @media (max-width: 760px) {
+        padding: 25px 20px;
+        width: -webkit-calc(100% - 40px);
+        width: calc(100% - 40px);
+        height: auto;
+    }
+}
+
+.front-page {
+    @media (max-width: 760px) {
+        #modal-popup {
+            display: none !important;
+        }
+    }
 }
 
 .popup-close {
@@ -56,6 +83,9 @@
         padding-left: 15px;
         background-color: #FFF;
         font-family: $os;
+        @media (max-width: 760px) {
+            height: 40px;
+        }
     }
     textarea {
         width: 100%;
@@ -66,6 +96,9 @@
         background-color: #FFF;
         resize: none;
         font-family: $os;
+        @media (max-width: 760px) {
+
+        }
     }
 }
 
